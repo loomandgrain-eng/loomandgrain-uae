@@ -9,9 +9,8 @@ npm install
 npm run dev
 ```
 
-## Optional project settings
+## Site identity
 
-- `NEXT_PUBLIC_SITE_URL` sets the new site's origin for canonical metadata, social previews, and the sitemap.
-- The floating WhatsApp button uses the business number provided for Loom and Grain: `+971 582 206 054`.
-
-These values belong to the Loom and Grain project and should be set in its own environment.
+- `lib/site.ts` is the source for the canonical domain and the business details used by SEO metadata and structured data.
+- `public/llms.txt` provides a plain-text business and service summary for answer engines.
+- The floating WhatsApp button uses the Loom and Grain business number: `+971 582 206 054`.

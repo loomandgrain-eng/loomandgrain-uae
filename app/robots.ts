@@ -1,27 +1,23 @@
-import { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "");
+import type { MetadataRoute } from "next";
+import { site } from "../lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-      // Explicitly allowing Answer Engines and AI Bots for AEO
+      { userAgent: "*", allow: "/" },
       {
         userAgent: [
-          "GPTBot", 
-          "ChatGPT-User", 
-          "Google-Extended", 
-          "Anthropic-ai", 
+          "OAI-SearchBot",
+          "GPTBot",
+          "ChatGPT-User",
+          "Google-Extended",
+          "Anthropic-ai",
           "PerplexityBot",
-          "ClaudeBot"
+          "ClaudeBot",
         ],
         allow: "/",
-      }
+      },
     ],
-    ...(siteUrl ? { sitemap: `${siteUrl}/sitemap.xml` } : {}),
+    sitemap: `${site.url}/sitemap.xml`,
   };
 }

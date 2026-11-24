@@ -1,13 +1,10 @@
-import { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "");
+import type { MetadataRoute } from "next";
+import { site } from "../lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (!siteUrl) return [];
-
   return [
     {
-      url: `${siteUrl}/`,
+      url: site.url,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,

@@ -64,7 +64,7 @@ const HorizontalProcess = () => {
           >
             {/* Background large step number */}
             <h2 
-              className="text-[28vw] md:text-[25vw] xl:text-[22vw] 2xl:text-[18vw] font-black leading-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 select-none"
+              className="text-[28vw] md:text-[25vw] xl:text-[22vw] 2xl:text-[18vw] font-light leading-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 select-none"
               style={{ color: 'var(--card-border)' }}
             >
               {card.step}
@@ -78,7 +78,7 @@ const HorizontalProcess = () => {
               >
                 Step // {card.step}
               </span>
-              <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[10rem] font-bold mb-4 md:mb-6 2xl:mb-10 tracking-tight">
+              <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[10rem] font-medium mb-4 md:mb-6 2xl:mb-10 tracking-tight">
                 {card.title}.
               </h3>
               <p 

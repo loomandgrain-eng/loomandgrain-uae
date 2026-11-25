@@ -46,7 +46,7 @@
   min-height: 44px;
   margin-top: 0.75rem;
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .socialLink svg {
@@ -63,7 +63,7 @@
 
 .columnTitle {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
   color: var(--foreground);
 }

@@ -40,7 +40,7 @@ const ScrollMarquee = () => {
     >
       <div
         ref={textRef}
-        className="flex whitespace-nowrap font-black text-[15vw] uppercase leading-none tracking-tighter text-transparent"
+        className="flex whitespace-nowrap font-light text-[15vw] uppercase leading-none tracking-tighter text-transparent"
         style={{
           width: "fit-content",
           WebkitTextStroke: "2px var(--primary)",
